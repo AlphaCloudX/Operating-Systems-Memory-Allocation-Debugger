@@ -4,11 +4,15 @@ This project is designed to test memory allocation strategies using different RA
 
 ## **How to Run the Tests**
 
-Clone the project files using ```bash
+Clone the project files using
+```bash
 git clone https://github.com/AlphaCloudX/Operating-Systems-Memory-Allocation-Grader.git
-``` into the directory where you have your `allocator` program
+```
+into the directory where you have your `allocator` program
 
-Then just copy the files from inside the folder to the current directory with ```bash
+
+Then just copy the files from inside the folder to the current directory with
+```bash
 cp -r Operating-Systems-Memory-Allocation-Grader/* .
 ```
 
