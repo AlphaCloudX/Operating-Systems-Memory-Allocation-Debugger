@@ -1,6 +1,8 @@
 # Memory Allocation Test Suite
 
-This project is designed to test memory allocation strategies using different RAM sizes. It generates test files, runs allocation tests, and validates the results by counting occurrences of `FAIL` and `SUCCESS` while extracting memory usage statistics.
+This project is designed to automate the testing of memory allocation strategies using different RAM sizes. It generates test files, runs allocation tests, and validates the results by counting occurrences of `FAIL` and `SUCCESS` while extracting memory usage statistics.
+
+It isn't the most robust solution but it has the ability to easily share test cases, automate the testing of hundreds of files and provide easy to read debugging output for a user to validate if methods works properly.
 
 ---
 
