@@ -4,6 +4,8 @@ This project is designed to test memory allocation strategies using different RA
 
 ## **How to Run the Tests**
 
+ensure you built your code using `make`
+
 Clone the project files using
 ```bash
 git clone https://github.com/AlphaCloudX/Operating-Systems-Memory-Allocation-Grader.git
