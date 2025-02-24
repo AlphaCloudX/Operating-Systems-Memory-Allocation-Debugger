@@ -18,6 +18,8 @@ cp -r Operating-Systems-Memory-Allocation-Grader/* .
 
 It should be ready to run now!
 
+If the bash file gives permission issues, simply type in `chmod +x runTests.sh` to allow the script to execute.
+
 ### **Step 1: Generate Test Files**
 Run the `runTests.sh` script, which prompts whether to select which ram sizes to test with. It will automatically generate the test files if they do not exist.
 ```bash
@@ -66,7 +68,6 @@ If there's a mismatch in total counts, it will flag as `FAILED` in red.
 
 ## **Notes**
 - If a file is missing, the script will warn and continue. Make sure you compile your code!
-- If the bash file gives permission issues, simply type in `chmod +x runTests.sh` to allow the script to execute.
 
 
 Happy testing!
