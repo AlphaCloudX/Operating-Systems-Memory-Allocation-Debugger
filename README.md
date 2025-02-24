@@ -2,6 +2,22 @@
 
 This project is designed to test memory allocation strategies using different RAM sizes. It generates test files, runs allocation tests, and validates the results by counting occurrences of `FAIL` and `SUCCESS` while extracting memory usage statistics.
 
+---
+
+## **Code Prerequisites**
+- When your allocator has made an allocation, it must output SUCCESS
+- When your allocator cannot make an allocation, it must output FAIL
+- If your allocator can free a location, it must not output SUCCESS OR FAIL, something like FREED Location X is fine.
+- Why? The code counts the number of SUCCESS's and FAIL's to determine if it mostly works as this will always remain constant. It may however still work if you use SUCCESS or FAIL for free's but I haven't tested this.
+
+
+Your summary must look as close to this as possible:
+```SUMMARY:
+990 bytes allocated
+34 bytes free```
+
+- This is because I am looking for the bytes allocated keywords and the bytes free keyword
+
 ## **How to Run the Tests**
 
 Ensure you built your code using `make`
@@ -38,6 +54,16 @@ As the user you only need to interact with the `runTests.sh` file.
 
 ## **Setup & Prerequisites**
 - Ensure the **allocator** executable is available
+
+---
+
+## **How Does This Actually Work?**
+Although this approach may not cover every edge case, the Python scripts generate random allocation and deallocation operations. Since the total number of allocation calls is fixed, the number of successful allocations plus the number of failed allocations will always sum to that fixed number.
+
+We can then compare the total allocated size for each method—Best-Fit, Worst-Fit, and First-Fit—and verify that they are consistent.
+
+For instance, if Best-Fit and First-Fit result in a total count of 200, but Worst-Fit results in a total count of 199, it indicates an issue of 1 allocation not being account for.
+
 
 ---
 
