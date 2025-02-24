@@ -12,9 +12,11 @@ This project is designed to test memory allocation strategies using different RA
 
 
 Your summary must look as close to this as possible:
-```SUMMARY:
+```
+SUMMARY:
 990 bytes allocated
-34 bytes free```
+34 bytes free
+```
 
 - This is because I am looking for the bytes allocated keywords and the bytes free keyword
 
