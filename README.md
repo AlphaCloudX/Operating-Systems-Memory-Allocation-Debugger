@@ -4,6 +4,11 @@ This project is designed to test memory allocation strategies using different RA
 
 ## **How to Run the Tests**
 
+Clone the project files using `git clone https://github.com/AlphaCloudX/Operating-Systems-Memory-Allocation-Grader.git` into the directory where you have your `allocator` program
+Then just copy the files from inside the folder to the current directory with `cp -r Operating-Systems-Memory-Allocation-Grader/* .`
+
+It should be ready to run now!
+
 ### **Step 1: Generate Test Files**
 Run the `runTests.sh` script, which prompts whether to select which ram sizes to test with. It will automatically generate the test files if they do not exist.
 ```bash
