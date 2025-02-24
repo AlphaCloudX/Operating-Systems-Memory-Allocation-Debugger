@@ -28,14 +28,14 @@ Ensure you built your code using `make`
 
 Clone the project files using
 ```bash
-git clone https://github.com/AlphaCloudX/Operating-Systems-Memory-Allocation-Grader.git
+git clone https://github.com/AlphaCloudX/Operating-Systems-Memory-Allocation-Debugger.git
 ```
 into the directory where you have your `allocator` program
 
 
 Then just copy the files from inside the folder to the current directory with
 ```bash
-cp -r Operating-Systems-Memory-Allocation-Grader/* .
+cp -r Operating-Systems-Memory-Allocation-Debugger/* .
 ```
 
 It should be ready to run now!
